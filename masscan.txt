@@ -1,5 +1,0 @@
-Masscan CLI (getting all the port after running masscan)
-
-sudo masscan -p1-65535 --max-rate 100 <target-ip> -oG output.txt
-
-cat masscan-result.txt | grep "Ports:" | awk {'print $5'} | awk -F '/' {'print $1'} | paste -s -d ','
